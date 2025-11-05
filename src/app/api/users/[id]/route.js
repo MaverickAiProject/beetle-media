@@ -4,10 +4,6 @@ import User from "@/models/userModel";
 import { NextResponse } from "next/server";
 import { Actions, Resources } from "@/lib/permissions";
 import { requirePermissionApi } from "@/lib/serverPermissions";
-import Order from "@/models/orderModel";
-import Service from "@/models/serviceModel";
-import SubService from "@/models/subServiceModel";
-import CallPlan from "@/models/callPlanModel";
 
 export async function GET(req, { params }) {
 
