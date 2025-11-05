@@ -43,7 +43,7 @@ export default async function Home() {
     ]
 
   return (
-    <div className="">
+    <div className="scroll-smooth">
     <NavBar/>
       <div className="pt-10">
         <HeroSection/>

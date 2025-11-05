@@ -57,11 +57,11 @@ const AuthDialog = ({ open, onOpenChange }) => {
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="sm:max-w-md p-0 border-0 overflow-hidden bg-gradient-to-br from-[#f0f7ff] to-[#e6f2ff]">
+            <DialogContent className="sm:max-w-md p-0 border-0 overflow-hidden bg-gradient-to-br from-[#151515] to-[#171717]">
                 <div className="p-8">
                     <DialogHeader>
-                        <DialogTitle className="text-center text-3xl font-bold text-[#003366] mb-5">
-                            Welcome to CA Vakeel
+                        <DialogTitle className="text-center text-3xl font-bold text-primary mb-5">
+                            Welcome to Beetle
                         </DialogTitle>
                     </DialogHeader>
 
@@ -77,7 +77,7 @@ const AuthDialog = ({ open, onOpenChange }) => {
                                             <Input
                                                 {...field}
                                                 placeholder="8569856985"
-                                                className="py-5 px-4"
+                                                className="py-5 px-4 text-white"
                                             />
                                         </FormControl>
                                         <FormMessage />

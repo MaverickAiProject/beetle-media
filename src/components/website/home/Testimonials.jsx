@@ -8,7 +8,7 @@ import 'swiper/css/autoplay'
 
 export default function Testimonials({ testimonials = [] }) {
     return (
-        <section className="relative bg-black text-white py-24 overflow-hidden" id="testimonials">
+        <section className="relative bg-black text-white pb-14 sm:pt-10 px-3 overflow-hidden" id="testimonials">
             {/* Red gradient background glow */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.15),transparent_70%)]"></div>
 

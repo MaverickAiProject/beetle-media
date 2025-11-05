@@ -64,11 +64,11 @@
         }
 
         return (
-            <section className="relative bg-black text-white pb-16">
+            <section className="relative bg-black text-white py-16">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#190000] via-[#1a0005] to-black opacity-80"></div>
 
                 <div className="relative max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-5xl font-bold text-center mb-15 text-white">
+                    <h2 className="text-3xl md:text-5xl font-bold text-center mb-7 lg:mb-15 text-white">
                         Frequently Asked Questions
                     </h2>
 

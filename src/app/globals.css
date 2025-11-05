@@ -137,6 +137,11 @@
 body {
   font-family: var(--font-poppins);
   background-color: black;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 code,

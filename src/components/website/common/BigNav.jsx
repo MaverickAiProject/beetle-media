@@ -13,11 +13,11 @@ export default function BigNav() {
         <Link href="/" className="hover:text-[#ff3333] transition-colors">
           Home
         </Link>
-        <Link href="/services" className="hover:text-[#ff3333] transition-colors">
+        <Link href="/#services" className="hover:text-[#ff3333] transition-colors">
           Services
         </Link>
-        <Link href="/about-us" className="hover:text-[#ff3333] transition-colors">
-          About Us
+        <Link href="/#faqs" className="hover:text-[#ff3333] transition-colors">
+          FAQs
         </Link>
       </div>
 

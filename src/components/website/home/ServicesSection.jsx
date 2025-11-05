@@ -37,45 +37,53 @@ function ServicesSection() {
     ]
 
     return (
-        <section className="bg-[#130b0b] text-white py-34 px-5 sm:px-10">
+        <section className="bg-[#130b0b] text-white py-28 px-4 sm:px-8 md:px-10" id='services'>
+            {/* Section Heading */}
             <div className="max-w-6xl mx-auto text-center mb-14">
-                <h2 className="text-4xl sm:text-5xl font-bold">Our Services</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    Our Services
+                </h2>
                 <p className="text-gray-400 mt-3 text-sm sm:text-base max-w-2xl mx-auto">
                     Empowering brands and creators with next-gen OTT solutions that drive engagement and growth.
                 </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto">
+            {/* Flex layout */}
+            <div
+                className="flex flex-wrap justify-center gap-6 sm:gap-8 max-w-7xl mx-auto"
+            >
                 {services.map((item) => (
                     <div
                         key={item.id}
-                        className="relative bg-[#0b0606] border border-[#2a1a1a] rounded-3xl px-8 py-10 w-[300px] sm:w-[390px]
-                                   shadow-lg overflow-hidden transition-all duration-500 hover:scale-[1.03] 
-                                   hover:shadow-[0_0_40px_-10px_#ff0000aa] group"
+                        className="relative bg-[#0b0606] border border-[#2a1a1a] rounded-3xl 
+                                   px-6 sm:px-8 py-10 w-[90%] sm:w-[320px] md:w-[360px] lg:w-[380px]
+                                   shadow-lg overflow-hidden transition-all duration-500 hover:scale-[1.03]
+                                   hover:shadow-[0_0_40px_-10px_#ff0000aa] group flex-shrink-0"
                     >
-                        {/* Background gradient hover glow */}
-                        <div className="absolute inset-0 bg-gradient-to-b from-red-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
+                        {/* Background glow on hover */}
+                        <div className="absolute inset-0 bg-gradient-to-b from-red-600/20 to-transparent 
+                                        opacity-0 group-hover:opacity-100 transition-opacity duration-500 
+                                        rounded-3xl" />
 
-                        {/* Faint background number */}
-                        <span className="absolute text-[100px] font-extrabold text-gray-700 opacity-5 top-2 right-4 select-none">
+                        {/* Background number */}
+                        <span className="absolute text-[90px] sm:text-[100px] font-extrabold text-gray-700 opacity-5 top-2 right-4 select-none">
                             {item.id}
                         </span>
 
                         {/* Icon */}
-                        <div className="mb-6">{item.icon}</div>
+                        <div className="mb-6 flex justify-center sm:justify-start">
+                            {item.icon}
+                        </div>
 
                         {/* Title */}
-                        <h3 className="text-xl font-semibold mb-3 text-white">{item.title}</h3>
+                        <h3 className="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-white">
+                            {item.title}
+                        </h3>
 
                         {/* Description */}
-                        <p className="text-gray-400 text-[15px] leading-relaxed mb-4">
+                        <p className="text-gray-400 text-sm sm:text-[15px] leading-relaxed text-center sm:text-left">
                             {item.desc}
                         </p>
-
-                        {/* Read more */}
-                        {/* <button className="text-sm text-red-400 font-semibold flex items-center gap-2 hover:text-red-300 transition-colors">
-                            Read More <span className="text-red-400 group-hover:translate-x-1 transition-transform">→</span>
-                        </button> */}
                     </div>
                 ))}
             </div>

@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react'
 
 export default function WhyChooseUs() {
     return (
-        <section className="relative bg-[#1a0f0f] text-white py-24 overflow-hidden mb-16">
+        <section className="relative bg-[#1a0f0f] text-white pt-24 pb-10 overflow-hidden" id='faqs'>
             <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
 
                 {/* Left Image */}

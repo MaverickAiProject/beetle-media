@@ -15,36 +15,37 @@ function HeroSection2() {
     return (
         <div className="relative w-full bg-black pt-10 overflow-hidden">
             {/* Top Arc */}
-            <div className="absolute top-0 left-0 w-full h-20 bg-black rounded-b-[100%] z-20"></div>
+            <div className="absolute top-0 left-0 w-full h-15 sm:h-20 bg-black rounded-b-[100%] z-20"></div>
 
             {/* Swiper Carousel */}
             <Swiper
                 modules={[Autoplay]}
-                spaceBetween={20}
-                slidesPerView={3}
                 loop={true}
                 autoplay={{
                     delay: 0,
                     disableOnInteraction: false,
                 }}
                 speed={4000}
+                breakpoints={{
+                    0: { slidesPerView: 3, spaceBetween: 10 },    // Mobile
+                    640: { slidesPerView: 3, spaceBetween: 15 },     // Small tablets
+                    1024: { slidesPerView: 3, spaceBetween: 20 },    // Laptops
+                    1440: { slidesPerView: 4, spaceBetween: 20 },    // Large screens
+                }}
                 className="w-full"
             >
                 {images.map((src, index) => (
                     <SwiperSlide key={index}>
-                        <div className="w-full  overflow-hidden rounded-xl shadow-lg">
+                        <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden shadow-lg">
                             <img
                                 src={src}
                                 alt={`banner-${index}`}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                             />
                         </div>
                     </SwiperSlide>
                 ))}
             </Swiper>
-
-            {/* Bottom Arc */}
-            {/* <div className="absolute bottom-0 left-0 w-full h-20 bg-black rounded-t-[100%] z-20"></div> */}
         </div>
     )
 }

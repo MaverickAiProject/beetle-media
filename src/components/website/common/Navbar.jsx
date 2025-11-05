@@ -22,7 +22,7 @@ export default function NavBar() {
 
     return (
         <>
-            <nav className={`w-full fixed z-50 transition-all duration-300 ${scrolled ? 'bg-black shadow-md py-4' : 'bg-black py-4'}`}>
+            <nav className={`w-full fixed z-50 transition-all duration-300 scroll-smooth ${scrolled ? 'bg-black shadow-md py-4' : 'bg-black py-4'}`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}

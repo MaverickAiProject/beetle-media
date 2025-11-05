@@ -6,7 +6,7 @@ export default async function LatestBlogs() {
     const blogs = await getLatestBlogs()
 
     return (
-        <section className="relative bg-black text-white pb-20 overflow-hidden">
+        <section className="relative bg-black text-white py-10 overflow-hidden">
             {/* Background red glow */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.08),transparent_70%)]"></div>
 
