@@ -38,7 +38,6 @@ function ServicesSection() {
 
     return (
         <section className="bg-[#130b0b] text-white py-28 px-4 sm:px-8 md:px-10" id='services'>
-            {/* Section Heading */}
             <div className="max-w-6xl mx-auto text-center mb-14">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
                     Our Services
@@ -48,7 +47,6 @@ function ServicesSection() {
                 </p>
             </div>
 
-            {/* Flex layout */}
             <div
                 className="flex flex-wrap justify-center gap-6 sm:gap-8 max-w-7xl mx-auto"
             >
@@ -60,27 +58,22 @@ function ServicesSection() {
                                    shadow-lg overflow-hidden transition-all duration-500 hover:scale-[1.03]
                                    hover:shadow-[0_0_40px_-10px_#ff0000aa] group flex-shrink-0"
                     >
-                        {/* Background glow on hover */}
                         <div className="absolute inset-0 bg-gradient-to-b from-red-600/20 to-transparent 
                                         opacity-0 group-hover:opacity-100 transition-opacity duration-500 
                                         rounded-3xl" />
 
-                        {/* Background number */}
                         <span className="absolute text-[90px] sm:text-[100px] font-extrabold text-gray-700 opacity-5 top-2 right-4 select-none">
                             {item.id}
                         </span>
 
-                        {/* Icon */}
                         <div className="mb-6 flex justify-center sm:justify-start">
                             {item.icon}
                         </div>
 
-                        {/* Title */}
                         <h3 className="text-lg sm:text-xl font-semibold mb-3 text-center sm:text-left text-white">
                             {item.title}
                         </h3>
 
-                        {/* Description */}
                         <p className="text-gray-400 text-sm sm:text-[15px] leading-relaxed text-center sm:text-left">
                             {item.desc}
                         </p>

@@ -64,7 +64,7 @@
         }
 
         return (
-            <section className="relative bg-black text-white py-16">
+            <section className="relative bg-black text-white py-16" id='faqs'>
                 <div className="absolute inset-0 bg-gradient-to-b from-[#190000] via-[#1a0005] to-black opacity-80"></div>
 
                 <div className="relative max-w-6xl mx-auto px-4">

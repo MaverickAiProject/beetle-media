@@ -14,10 +14,7 @@ function HeroSection2() {
 
     return (
         <div className="relative w-full bg-black pt-10 overflow-hidden">
-            {/* Top Arc */}
             <div className="absolute top-0 left-0 w-full h-15 sm:h-20 bg-black rounded-b-[100%] z-20"></div>
-
-            {/* Swiper Carousel */}
             <Swiper
                 modules={[Autoplay]}
                 loop={true}
@@ -27,10 +24,10 @@ function HeroSection2() {
                 }}
                 speed={4000}
                 breakpoints={{
-                    0: { slidesPerView: 3, spaceBetween: 10 },    // Mobile
-                    640: { slidesPerView: 3, spaceBetween: 15 },     // Small tablets
-                    1024: { slidesPerView: 3, spaceBetween: 20 },    // Laptops
-                    1440: { slidesPerView: 4, spaceBetween: 20 },    // Large screens
+                    0: { slidesPerView: 3, spaceBetween: 10 },    
+                    640: { slidesPerView: 3, spaceBetween: 15 },     
+                    1024: { slidesPerView: 3, spaceBetween: 20 },   
+                    1440: { slidesPerView: 4, spaceBetween: 20 },    
                 }}
                 className="w-full"
             >

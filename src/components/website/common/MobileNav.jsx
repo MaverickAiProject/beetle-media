@@ -11,7 +11,6 @@ export default function MobileNav({ isOpen, onClose }) {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -20,7 +19,6 @@ export default function MobileNav({ isOpen, onClose }) {
             onClick={onClose}
           />
 
-          {/* Sidebar */}
           <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
@@ -29,7 +27,6 @@ export default function MobileNav({ isOpen, onClose }) {
             className="fixed top-0 right-0 h-full w-full max-w-md bg-black text-white z-50 shadow-2xl overflow-y-auto"
           >
             <div className="flex flex-col h-full">
-              {/* Header */}
               <div className="flex items-center justify-between p-4 border-b border-gray-800">
                 <div className="flex items-center space-x-2">
                   <Image
@@ -48,7 +45,6 @@ export default function MobileNav({ isOpen, onClose }) {
                 </button>
               </div>
 
-              {/* Navigation Content */}
               <div className="flex-1 overflow-y-auto py-6 px-6 space-y-4">
                 <Link
                   href="/"
@@ -58,23 +54,23 @@ export default function MobileNav({ isOpen, onClose }) {
                   Home
                 </Link>
                 <Link
-                  href="/services"
+                  href="/#services"
                   className="block py-3 text-lg font-medium border-b border-gray-800 hover:text-[#ff3333] transition-colors"
                   onClick={onClose}
                 >
                   Services
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/#faqs"
                   className="block py-3 text-lg font-medium border-b border-gray-800 hover:text-[#ff3333] transition-colors"
                   onClick={onClose}
                 >
-                  About Us
+                  FAQs
                 </Link>
 
                 <div className="pt-6 space-y-3">
                   <Link
-                    href="/contact-us"
+                    href="/#contact"
                     className="block text-center bg-[#ff3333] text-white rounded-xl font-medium py-3 hover:bg-[#e60000] transition-colors flex items-center justify-center"
                     onClick={onClose}
                   >
@@ -83,7 +79,6 @@ export default function MobileNav({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* Footer */}
               <div className="p-4 border-t border-gray-800 text-center text-xs text-gray-400">
                 © {new Date().getFullYear()} Beetle Media. All rights reserved.
               </div>

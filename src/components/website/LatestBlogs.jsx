@@ -7,11 +7,9 @@ export default async function LatestBlogs() {
 
     return (
         <section className="relative bg-black text-white py-10 overflow-hidden">
-            {/* Background red glow */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.08),transparent_70%)]"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6">
-                {/* Heading */}
                 <div className="text-center mb-16">
                     <p className="text-[#ff3333] uppercase font-semibold tracking-widest mb-3">
                         Insights
@@ -24,7 +22,6 @@ export default async function LatestBlogs() {
                     </p>
                 </div>
 
-                {/* Blog Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {blogs?.map((blog) => (
                         <div key={blog._id} className="transition-transform duration-500 hover:-translate-y-2">
@@ -33,7 +30,6 @@ export default async function LatestBlogs() {
                     ))}
                 </div>
 
-                {/* CTA Button */}
                 <div className="mt-16 text-center">
                     <a
                         href="/blogs"

@@ -25,7 +25,6 @@ export default function NavBar() {
             <nav className={`w-full fixed z-50 transition-all duration-300 scroll-smooth ${scrolled ? 'bg-black shadow-md py-4' : 'bg-black py-4'}`}>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
                     <div className="flex items-center justify-between h-16">
-                        {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2">
                             <div className=" rounded-lg">
                                 <Image
@@ -38,10 +37,8 @@ export default function NavBar() {
                             </div>
                         </Link>
 
-                        {/* Big Navigation (Desktop) */}
                         <BigNav />
 
-                        {/* Mobile Hamburger */}
                         <div className="xl:hidden flex items-center space-x-3">
                             <LoginButton className="px-3 py-1.5 rounded-lg hover:bg-gray-100" />
                             <button
@@ -56,7 +53,6 @@ export default function NavBar() {
                 </div>
             </nav>
 
-            {/* Mobile Navigation */}
             <MobileNav
                 isOpen={mobileOpen}
                 onClose={() => setMobileOpen(false)}

@@ -41,11 +41,9 @@ export default function Contact() {
 
     return (
         <section className="relative  text-white py-10 overflow-hidden" id="contact">
-            {/* Red glow background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(255,0,0,0.1),transparent_70%)]"></div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-                {/* Left Content */}
                 <div className="lg:w-1/2 space-y-6 ">
                     <p className="text-[#ff4d4d] uppercase tracking-widest font-semibold">Get in Touch</p>
                     <h2 className="text-4xl md:text-5xl font-bold leading-tight">
@@ -66,7 +64,6 @@ export default function Contact() {
                     </div>
                 </div>
 
-                {/* Right Form */}
                 <div className="lg:w-1/2 w-full bg-[#111] rounded-3xl border border-[#2a1a1a] p-8 shadow-[0_0_30px_-10px_#ff000055]">
                     {isSubmitted ? (
                         <div className="text-center py-10">

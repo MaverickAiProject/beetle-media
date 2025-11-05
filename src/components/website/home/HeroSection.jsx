@@ -27,10 +27,14 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex justify-center gap-4 flex-row max-[450px]:flex-col items-center">
           <button className="bg-[#ff3333] hover:bg-[#e60000] max-[450px]:max-w-[200px] text-white font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-md shadow-red-900/30">
+          <a href="#contact">
             Get a Demo
+          </a>
           </button>
           <button className="bg-transparent border border-[#ff3333] text-[#ff3333] font-semibold py-3 px-8 rounded-lg hover:bg-[#ff3333] hover:text-white transition duration-300">
+          <a href="#services">
             Explore Services
+            </a>
           </button>
         </div>
       </div>
