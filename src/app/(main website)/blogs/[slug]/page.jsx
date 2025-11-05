@@ -1,4 +1,3 @@
-// app/blogs/[slug]page.jsx
 
 import EnquiryForm from '@/components/website/EnquiryForm';
 import WebsiteLayout from '@/components/website/WebsiteLayout';
@@ -8,35 +7,6 @@ import BlogData from '../components/BlogData';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator, } from '@/components/ui/breadcrumb';
 import LatestBlogs from '@/components/website/LatestBlogs';
 
-
-// export async function generateMetadata({ params }) {
-//     const slug = await params
-//     // const blog = await getBlogBySlug(slug.slug);
-
-//     if (!blog) return {
-//         title: "blog Not Found",
-//         description: "The requested service does not exist"
-//     };
-
-//     return {
-//         title: blog.title,
-//         description: blog.shortDescription,
-//         openGraph: {
-//             title: blog.title,
-//             description: blog.shortDescription,
-//             images: [blog.imageURL],
-//             url: `/blogs/${blog.slug}`,
-//             type: 'website'
-//         },
-//         twitter: {
-//             card: 'summary_large_image',
-//             title: blog.title,
-//             description: blog.shortDescription,
-//             images: [blog.imageURL]
-//         }
-//     };
-// }
-
 export default async function page({ params }) {
 
     const slug = await params
@@ -45,7 +15,7 @@ export default async function page({ params }) {
 
     return (
         <WebsiteLayout>
-            <article className="max-w-7xl mx-auto space-y-5 px-2">
+            <article className="mx-auto space-y-5 bg-gradient-to-br from-black to-red-950">
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
