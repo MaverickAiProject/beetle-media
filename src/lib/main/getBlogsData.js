@@ -46,7 +46,7 @@ export async function getBlogBySlug(slug) {
 //     }
 // }
 
-export async function getLatestBlogs(limit = 4) {
+export async function getLatestBlogs(limit = 3) {
     try {
         await connectDB();
         const latest = await Blog.find()

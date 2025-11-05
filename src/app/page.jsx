@@ -8,6 +8,8 @@ import HeroSection from "@/components/website/home/HeroSection";
 import HeroSection2 from "@/components/website/home/HeroSection2";
 import ServicesSection from "@/components/website/home/ServicesSection";
 import Testimonials from "@/components/website/home/Testimonials";
+import WhyChooseUs from "@/components/website/home/WhyChooseUs";
+import LatestBlogs from "@/components/website/LatestBlogs";
 import { getTestimonialsData } from "@/lib/main/getStaticData";
 
 export default async function Home() {
@@ -47,9 +49,11 @@ export default async function Home() {
         <HeroSection/>
         <HeroSection2/>
         <ServicesSection/>
+        <WhyChooseUs/>
         <FAQSection/>
         <Testimonials testimonials={testimonials}/>
         <Contact/>
+        <LatestBlogs/>
         <Footer/>
       </div>
     </div>
